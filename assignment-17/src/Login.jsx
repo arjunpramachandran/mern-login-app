@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post('http://localhost:3000/login', {
+      const response = await axios.post('https://mern-login-app-it58.onrender.com/login', {
         email,
         password,
       })

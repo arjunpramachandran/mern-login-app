@@ -32,7 +32,7 @@ const SignUp = () => {
             if(!/^\d{10}$/.test(phoneNumber)) {
                 return setError('Please enter a valid phone number');
             }
-            await axios.post('http://localhost:3000/signup', {
+            await axios.post('https://mern-login-app-it58.onrender.com/signup', {
                 name,
                 email,
                 password,

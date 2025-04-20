@@ -6,7 +6,7 @@ const port = process.env.port || 3000;
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:5173', 
+    origin: 'https://mern-login-app-fr.onrender.com', 
     credentials: true
   }));
 const User = require('./Models/User.js')
